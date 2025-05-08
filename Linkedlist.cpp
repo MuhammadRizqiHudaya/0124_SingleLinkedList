@@ -37,7 +37,19 @@ Public :
 
         if (START == NULL || nim <= START -> nomhs)
         {
-            
+            if ((START != NULL)&& (nim == START->nomhs))
+            {
+                cout << "\nduplikasi nomhs tidak diijinkan\n";
+                return;
+            }
         }
-    }
+        nodebaru -> next = START;
+        START = nodebaru;
+        return; 
+    };
+
+    node *previous = START;
+    node *currrent = START;
+
+    while ((current ! = NULL)&&(nim >= current ->nomhs))
 }
