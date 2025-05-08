@@ -19,13 +19,7 @@ public:
         START = NULL;
     }
 };
-{
-Public :
-    list()
-    {
-        START = NULL;
-    }
-
+    
     void addnode()
     {
         int nim;
@@ -64,9 +58,9 @@ Public :
 
     nodebaru -> next = current ;
     previous -> next = nodebaru;
-}
 
-public:
+
+
     {
 
     bool listempty()
@@ -104,4 +98,21 @@ public:
         }
 
         void traverse()
+        {
+            if (listempty())
+            {
+                cout << "\nList Kosong\n";
+            }
+            else
+            {
+                cout << "\ndata didalam list adalah:\n";
+                node *current = START;
+                while (currentnode != NULL)
+                {
+                    cout << current -> nomhs << endl;
+                    currentnode = current -> next;
+                }
+                cout << endl;
+            }
+        }
     }
