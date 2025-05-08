@@ -8,3 +8,14 @@ public:
     int nomhs;
     node*next;
 };
+
+class list
+{
+    node *START;
+
+public:
+    list()
+    {
+        START = NULL;
+    }
+};
