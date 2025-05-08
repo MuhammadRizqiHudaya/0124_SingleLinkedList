@@ -52,4 +52,18 @@ Public :
     node *currrent = START;
 
     while ((current ! = NULL)&&(nim >= current ->nomhs))
+    {
+        if (nim == current -> nomhs)
+        {
+            cout << "\nduplikasi nomhs tidak diijinkan\n;"
+            return;
+        }
+        previous = current;
+        current = current -> next
+    }
+
+    nodebaru -> next = current ;
+    previous -> next = nodebaru;
 }
+
+bool lisitempty()
