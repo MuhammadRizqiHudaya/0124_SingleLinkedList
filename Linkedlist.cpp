@@ -19,3 +19,25 @@ public:
         START = NULL;
     }
 };
+{
+Public :
+    list()
+    {
+        START = NULL;
+    }
+
+    void addnode()
+    {
+        int nim;
+        cout <<"\nMasukkan nomor mahasiswa:";
+        cin >> nim;
+
+        node *nodebaru = new node;
+        nodebaru->nomhs = nim;
+
+        if (START == NULL || nim <= START -> nomhs)
+        {
+            
+        }
+    }
+}
