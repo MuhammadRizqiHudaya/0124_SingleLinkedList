@@ -66,4 +66,23 @@ Public :
     previous -> next = nodebaru;
 }
 
-bool lisitempty()
+public:
+    {
+
+    bool listempty()
+    {
+        return (START == NULL);
+    }
+
+    bool search(int nim, node **previous, node **current)
+    {
+        *previous = START;
+        *current = START;
+
+        while ((*current != NULL)&&(nim != (*current)->nomhs))
+        {
+            *previous = *current;
+            *current = (*current)->next;
+        }
+    }
+    }
